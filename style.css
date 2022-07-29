@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 body {
@@ -95,9 +95,33 @@ div button:active {
     font-size: 50px;
     width: 75px;
     height: 75px;
-    background-color: darkslategray;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+}
+
+
+#rock-paper-scissors::before {
+    content: "ROCK";
+    color: yellow;
+    animation: title infinite 2s;
+    font-size: 75px;
+    margin-top: 25px;
+}
+
+@keyframes title {
+    0% {
+        content: "ROCK"
+    }
+    25% {
+        content: "PAPER"
+    }
+    50% {
+        content: "SCISSORS"
+    }
+    75% {
+        content: "SHOOT!"
+    }
 }
