@@ -3,8 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="header">
+            <p id="rockPaperScissors">Rock Paper Scissors Shoot!</p>
+        </div>
+        <div class="choose">
+            <div class="Rock">
+                <p>
+                    Are you The Boulder? Solid as a Rock? 
+                    Tired of Being Skipped?  <span class="bold">Give Your Opponent a Large
+                    Knot on Their Forehead: </span>
+                </p>
+                <button id="rock" onclick="playerSelect('rock')"> </button>
+            </div>
+            <div class="Paper">
+                <p>
+                    Would you Like to Give Your Opponent a Fierce,
+                    Bloody, Papery Wound? <span class="bold"> Fold The Opposition in Half Like the Origami
+                    They Are:</span>
+                </p>
+                <button id="paper" onclick="playerSelect('paper')">
+                </button>
+            </div>
+            <div class="Scissors">
+                <p>
+                    Are You Sharp as a Blade? Grab Life by the Handles and Open 
+                    That Ridiculously Sealed Package. <span class="bold">Cut the Enemy in Half:
+                </p></span>
+                <button id="scissors" onclick="playerSelect('scissors')"></button>
+            </div>
+        </div>
+        <div class="players">
+            <div class="player">
+                <div id="playerChoice"></div>
+                <p id="playerScore"></p>
+            </div>
+            <div class="computer">
+                <div id="computerChoice"></div>
+                <p id="computerScore"></p>
+            </div>
+        </div>
+        <p id="winner"></p>
+        
         <script src="rockPaperScissors.js"></script>
     </body>
 </html>
